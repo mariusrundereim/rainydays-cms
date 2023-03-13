@@ -1,3 +1,5 @@
+const productCard = document.querySelector(".prod");
+
 const url = "https://runder.no/rainydays-cms/wp-json/wc/store/products/";
 
 async function getProducts() {
@@ -6,6 +8,15 @@ async function getProducts() {
   console.log(data);
 
   data.forEach((jacket) => {
+
+    productCard.innerHTML = `
+    <a href="">
+    <h2>${jacket.name}</h2>
+    <img src="${jacket.images[0].src}">
+    </a>
+    
+    `
+
     console.log(jacket.name);
     console.log(jacket.id);
     console.log(jacket.images[0].src);
