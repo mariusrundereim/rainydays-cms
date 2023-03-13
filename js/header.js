@@ -1,3 +1,5 @@
+/*
+
 function men() {
   document.querySelector(".category-men").classList.toggle("display-block");
 }
@@ -11,3 +13,5 @@ function MobileBar() {
     .querySelector(".header-mobile-pagelinks")
     .classList.toggle("display-block");
 }
+
+*/
