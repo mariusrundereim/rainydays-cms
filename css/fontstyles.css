@@ -1,0 +1,84 @@
+.heading-xl {
+  font-size: var(--heading-xl, 40px);
+  font-family: "Akshar", sans-serif;
+}
+
+.heading-uppercase-xl {
+  font-size: var(--heading-xl, 40px);
+  text-transform: uppercase;
+  font-family: "Akshar", sans-serif;
+}
+
+.page-heading-xxl {
+  font-size: var(--heading-xxl);
+  /* font-size: clamp(1rem, 5vw, 7rem); */
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: var(--font-2);
+}
+
+.heading-uppercase-l {
+  font-size: var(--heading-l, 40px);
+  text-transform: uppercase;
+  font-family: "Akshar", sans-serif;
+}
+
+.heading-uppercase-m {
+  font-size: var(--heading-m, 40px);
+  text-transform: uppercase;
+  font-family: "Akshar", sans-serif;
+}
+
+.heading-uppercase-s {
+  font-size: var(--heading-s, 40px);
+  text-transform: uppercase;
+  font-family: "Akshar", sans-serif;
+}
+
+.text-sm {
+  font-size: var(--text-sm, 20px);
+  font-weight: 300;
+}
+
+.text-price {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.text-uppercase-sm {
+  font-size: var(--text-sm, 20px);
+  text-transform: uppercase;
+}
+
+.pagelinks {
+  font-family: var(--font-2);
+  font-size: var(--p-links);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--c-white);
+  transition: var(--transition-1);
+}
+
+.pagelinks:hover {
+  color: var(--main_green);
+}
+
+.pagelinks-xl {
+  font-family: var(--font-2);
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--c-white);
+  transition: var(--transition-1);
+}
+
+.pagelinks-xl:hover {
+  color: var(--main_green);
+}
+
+.small-heading {
+  color: var(--c-white);
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}

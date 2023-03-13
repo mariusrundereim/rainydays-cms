@@ -1,0 +1,92 @@
+.main_button {
+  border: var(--border_normal) solid;
+  background: var(--main_green);
+  padding: var(--padding-m);
+}
+
+.btn-submit {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--main_green-dark);
+  background: var(--main_green);
+  padding: var(--padding-m);
+  border: var(--border_normal) var(--main_green) solid;
+  text-decoration: none;
+  height: min-content;
+  transition: var(--transition-1);
+}
+
+.btn-submit:hover {
+  color: var(--c-white);
+  background: var(--main_green-dark);
+  border: var(--border_normal) var(--main_green) solid;
+}
+
+.btn-3 {
+  font-size: var(--heading-m);
+  text-transform: uppercase;
+  font-family: var(--font-1);
+  color: var(--main_green-dark);
+  background-color: var(--c-white);
+  width: 100%;
+  height: 4rem;
+  border: var(--border_normal) var(--main_grey2) solid;
+  text-decoration: none;
+  transition: var(--transition-1);
+}
+
+.btn-3:hover {
+  border: var(--border_normal) var(--main_grey1) solid;
+}
+
+.btn-addtocart {
+  background: var(--main_green);
+  width: max-content;
+  padding: var(--padding-m);
+  text-decoration: none;
+  color: var(--main_green-dark);
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: var(--transition-1);
+}
+
+.btn-addtocart:hover {
+  color: var(--c-white);
+  background: var(--main_green-dark);
+}
+
+.btn-result {
+  color: var(--main_green-dark);
+  background: var(--main_green);
+  width: max-content;
+  height: max-content;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-small {
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  font-family: var(--font-1);
+  color: var(--main_green-dark);
+  background-color: var(--c-white);
+  border: var(--border_normal) var(--main_grey2) solid;
+  transition: var(--transition-1);
+}
+
+.btn-small:hover {
+  background: var(--main_green);
+  border: var(--border_normal) var(--main_green) solid;
+}
+
+.hr-line-small {
+  border: 1px solid var(--main_green-dark);
+  background: var(--main_green-dark);
+}
+
+.hr-line-big {
+  border: 2px solid var(--main_green-dark);
+  background: var(--main_green-dark);
+}

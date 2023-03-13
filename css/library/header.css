@@ -1,0 +1,130 @@
+/*** Header ***/
+
+.top-header {
+  background: var(--main_green-dark);
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pad-1 {
+  padding: 1rem;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.center {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.primary-nav {
+  cursor: pointer;
+}
+
+/* Primary Header */
+
+.primary-header {
+  background: var(--main_green-dark);
+  width: 100%;
+  min-height: 84px;
+}
+
+.page-logo {
+  width: 160px;
+}
+
+.primary-nav li {
+  list-style: none;
+}
+
+.primary-nav ul {
+  padding-left: 0;
+}
+
+.header-shopping-bag {
+  color: white;
+  font-size: 1.6rem;
+}
+
+/* Primary Header - Mobile */
+
+.primary-header-mobile {
+  display: none;
+  background: var(--main_green-dark);
+  width: 100%;
+  min-height: 84px;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 1.8rem;
+  transition: 200ms ease;
+}
+
+.fa-bars:hover {
+  color: var(--main_green);
+}
+
+.header-mobile-pagelinks {
+  background: var(--main_green-dark);
+  width: 100%;
+  height: max-content;
+  padding: var(--padding-m);
+  display: none;
+}
+
+/* Category Men - Desktop */
+
+.category-men {
+  background: var(--main_green-dark);
+  width: 100%;
+  min-height: 15rem;
+  display: none;
+}
+
+.category-men-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  grid-template-rows: 1fr 80px;
+  width: calc(100% - 10rem);
+  min-height: 16rem;
+  margin: 0 auto;
+}
+
+.cat-men-col:nth-child(4) {
+  grid-column: 3;
+}
+
+/* Category Women - Desktop */
+
+.category-women {
+  background: var(--main_pink-dark);
+  width: 100%;
+  min-height: 15rem;
+  display: none;
+}
+
+.category-women-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  grid-template-rows: 1fr 80px;
+  width: calc(100% - 10rem);
+  min-height: 12rem;
+  margin: 0 auto;
+}
+
+.cat-women-col:nth-child(4) {
+  grid-column: 3;
+}
+
+.display-block {
+  display: block;
+}

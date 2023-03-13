@@ -1,0 +1,185 @@
+/* MEDIUM DEVICES */
+@media screen and (max-width: 1200px) {
+  :root {
+    --page-width: calc(100% - 2rem);
+  }
+
+  .primary-header {
+    display: none;
+  }
+
+  .primary-header-mobile {
+    display: block;
+  }
+
+  .grid-two-col {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-four-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-two-col-clean {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .grid-skew {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  /* Homepage */
+
+  .hero-img-prop {
+    min-height: 10rem;
+  }
+
+  .ourbrands--grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .men-image {
+    background-image: url(/images/products/product-promo-men-ipad.png);
+  }
+
+  .women-image {
+    background-image: url(/images/products/product-women-ipad.png);
+  }
+
+  /* List of Jackets */
+
+  .listofjackets-page-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /********************* SINGLE PRODUCT *********************/
+
+  /* Add to Cart */
+
+  /* About */
+
+  .openpositions-grid {
+    grid-template-columns: auto;
+    grid-template-rows: 2fr repeat(4, 1fr);
+  }
+  /* Contact Page */
+
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Footer */
+
+  .footer-responsive {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .flex--footer {
+    align-items: center;
+  }
+}
+
+/* SMALLER DEVICES */
+/* SMALLER DEVICES */
+/* SMALLER DEVICES */
+/* SMALLER DEVICES */
+/* SMALLER DEVICES */
+/* SMALLER DEVICES */
+/* SMALLER DEVICES */
+/* SMALLER DEVICES */
+@media screen and (max-width: 360px) {
+  /* Header */
+
+  .category-men-grid {
+    width: calc(100% - 3rem);
+  }
+
+  .hero-img-prop {
+    min-height: 6rem;
+  }
+
+  /* Homepage */
+
+  .ourbrands--grid {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  /* Flexbox */
+  .flex-col-hor {
+    flex-direction: column;
+  }
+
+  /* Grid */
+  .grid-two-col-clean {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-two-col {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-four-col {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-five-col {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--padding-sm);
+  }
+
+  /* List of Jackets */
+
+  .listofjackets-page-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Add to Cart */
+
+  .flex-gap-align {
+    flex-direction: column;
+  }
+
+  /* Single Product Page */
+
+  /* Footer */
+
+  .some-icons-main {
+    justify-content: space-around;
+    gap: var(--gap_1);
+  }
+
+  .social-box {
+    padding: var(--padding-sm);
+    font-size: 1rem;
+  }
+
+  .news-form {
+    width: calc(100% - 2rem);
+  }
+
+  /* Add to Cart */
+
+  .cart-sec-item-box:nth-child(3) {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .cart-sec-item-box:nth-child(4) {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+
+  /* Contact Page */
+
+  .contact-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

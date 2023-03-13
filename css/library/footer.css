@@ -1,0 +1,101 @@
+/*** Footer ***/
+
+footer {
+  background: var(--main_green-dark);
+  min-height: 25rem;
+  width: 100%;
+}
+
+.footer-responsive {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+.flex--footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.logo-footer {
+  min-width: 1rem;
+  max-width: 15rem;
+}
+
+.some-icons-main {
+  display: flex;
+  flex-direction: row;
+
+  gap: var(--gap_1);
+}
+
+.newsletter {
+  border: var(--main_green) var(--border_normal) solid;
+  min-height: 22rem;
+}
+
+.social-box {
+  padding: var(--padding-m);
+  color: var(--main_grey2);
+  background: transparent;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: var(--transition-1);
+}
+
+.social-box:hover {
+  color: var(--main_green-dark);
+  background: var(--main_green);
+}
+
+.news-wrap {
+  width: 100%;
+  min-height: calc(100% - 8rem);
+}
+
+.news-form {
+  width: calc(100% - 5rem);
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-name {
+  min-width: 20%;
+  max-width: 100%;
+}
+
+.email-form {
+  min-width: 20%;
+  max-width: 100%;
+}
+
+#name-form-label {
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 300ms ease-in;
+}
+
+#name-form-label:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#email-form-label {
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 300ms ease-in;
+}
+
+#email-form-label:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}

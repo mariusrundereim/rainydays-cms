@@ -1,0 +1,456 @@
+@import url(/css/library/header.css);
+@import url(/css/library/footer.css);
+@import url(/css/library/framework.css);
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Brand Colors */
+  --main_green: #92e596;
+  --main_green-dark: #4b5e6f;
+  --main_pink: #ff9094;
+  --main_pink-dark: #6a435a;
+
+  --main_grey1: #979797;
+  --main_grey2: #d2dbe3;
+  --c-white: #ffffff;
+  --c-dark: #131414;
+
+  /* Fontstyles */
+  --font-1: "Akshar", sans-serif;
+  --font-2: "Heebo", sans-serif;
+
+  --heading-xxl: clamp(2rem, 5vw, 4rem); /* Heading 1*/
+  --heading-xl: clamp(1.5rem, 2.5vw, 3rem); /* Heading 1*/
+  --heading-l: clamp(1.3rem, 2.5vw, 1.8rem); /* Heading 2*/
+  --heading-m: clamp(1.1rem, 2.5vw, 1.4rem); /* Heading 3*/
+  --heading-s: clamp(1.1rem, 2.5vw, 1.2rem); /* Heading 3*/
+  --text-sm: clamp(0.7rem, 2.5vw, 1rem); /* Paragraphs */
+  --p-links: 1.25rem;
+
+  /* Padding */
+  --padding-xl: 2rem;
+  --padding-m: 1rem;
+  --padding-sm: 0.5rem;
+
+  /* Border */
+  --border_normal: 3px;
+  --border_small: 2px;
+
+  /* Gap */
+  --gap-sm: 0.5rem;
+  --gap_1: 1rem;
+  --gap_2: 2rem;
+  --gap_3: 3rem;
+
+  /* Width */
+  --page-width: calc(100% - 5rem);
+
+  /* Height */
+  --page-container-height: clamp(5rem, 2.5vw, 5.5rem);
+
+  /* Scale*/
+  --scaling: 1;
+
+  /* Transitions */
+  --transition-1: 300ms ease;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+}
+
+.page-width {
+  width: var(--page-width);
+  max-width: 1400px;
+  margin: 0 auto;
+  /* border: 1px dashed tomato; */
+}
+
+/********************* HOMEPAGE *********************/
+
+.fa-bag-shopping:hover {
+  color: var(--main_green);
+}
+
+.image-prop {
+  width: 100%;
+  min-height: 25rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.hover-men-border:hover {
+  border: 6px solid var(--main_green);
+  transition: var(--transition-1);
+}
+
+.hover-women-border:hover {
+  border: 6px solid var(--main_pink);
+  transition: var(--transition-1);
+}
+
+.men-image {
+  background-image: url(/images/products/product-promo-men-ipad.png);
+}
+
+.women-image {
+  background-image: url(/images/products/product-promo-women.png);
+}
+
+/* Hero Images */
+
+.hero--text {
+  width: 50%;
+  filter: drop-shadow(0px 5px 15px);
+}
+
+.hero-img-prop {
+  width: 100%;
+  min-height: 25rem;
+  /**/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-img-1 {
+  background-image: linear-gradient(
+      rgba(75, 94, 111, 0.5),
+      rgba(75, 94, 111, 0.5)
+    ),
+    url(/images/hero-img-1-sm.png);
+}
+
+.hero-img-2 {
+  background-image: linear-gradient(
+      rgba(75, 94, 111, 0.5),
+      rgba(75, 94, 111, 0.5)
+    ),
+    url(/images/hero-img-2-sm.png);
+}
+
+.hero-img-3 {
+  background-image: linear-gradient(
+      rgba(75, 94, 111, 0.5),
+      rgba(75, 94, 111, 0.5)
+    ),
+    url(/images/hero-img-3-sm.png);
+}
+
+.ourbrands {
+  background-color: var(--main_grey2);
+  padding: var(--padding-m);
+  min-height: 12rem;
+  transition: var(--transition-1);
+}
+
+.ourbrands--grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+}
+
+.ourbrands:hover {
+  background-color: var(--main_green);
+}
+
+.brand-logo {
+  scale: 1;
+  transition: var(--transition-1);
+
+  min-width: 4rem;
+  max-width: 10rem;
+}
+
+.brand-logo:hover {
+  scale: 1.2;
+}
+
+.brand-logo-scale {
+  scale: var(--scaling);
+}
+
+/********************* LIST OF JACKETS *********************/
+
+.aside-icons {
+  color: var(--main_green-dark);
+  font-size: 1.4rem;
+  transition: var(--transition-1);
+}
+
+.aside-icons:hover {
+  color: var(--main_green);
+}
+
+.listofjackets-page-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: var(--gap_2);
+}
+
+.sticky-label {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+}
+
+.sticky-label-content {
+  position: absolute;
+  color: var(--c-dark);
+  background: var(--main_green);
+  padding: 0.2rem 0.5rem;
+  margin-top: -15px;
+}
+
+.page--card {
+  background: rgb(255, 255, 255);
+  border: var(--border_normal) var(--main_grey2) solid;
+  min-height: 30rem;
+  /**/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--transition-1);
+}
+
+.page--card:hover {
+  border: var(--border_normal) var(--main_green-dark) solid;
+}
+
+.p-card--item-1 {
+  height: 18rem;
+}
+
+.pc--content {
+  flex-grow: 1;
+}
+
+.card--grid-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.teest-2 {
+  width: 200%;
+  transition: 400ms ease;
+}
+
+.teest-2:hover {
+  transform: translateX(-50%);
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.card--grid-item:nth-child(2) {
+  background: var(--main_green);
+}
+
+.img-jacket-1 {
+  background-image: url(/images/products/RainyDays_Jacket-2-sm.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 160px;
+  height: 200px;
+  scale: 1.2;
+  transition: var(--transition-1);
+}
+
+.img-jacket-1:hover {
+  scale: 1.4;
+}
+
+.text-addtocart {
+  text-decoration: none;
+  color: var(--main_green-dark);
+  text-transform: uppercase;
+}
+
+/********************* SINGLE PRODUCT *********************/
+
+.singlejacket-image {
+  width: clamp(18rem, 50%, 40rem);
+  min-height: 5rem;
+}
+
+.img-prop {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.color-container {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap_1);
+}
+
+.color-box {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.color-1-tag {
+  background: rgb(227, 54, 54);
+}
+
+.color-2-tag {
+  background: rgb(84, 214, 84);
+}
+
+.color-3-tag {
+  background: rgb(92, 108, 118);
+}
+
+.color-4-tag {
+  background: rgb(39, 39, 39);
+}
+
+/********************* ADD TO CART *********************/
+
+.cart-section-4 {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+.img-cart {
+  width: 80px;
+}
+
+.progress-bar-cart {
+  border: 2px var(--main_green-dark) solid;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.progress-bar-cart-uncheck {
+  color: var(--main_grey1);
+  border: 2px var(--main_grey1) solid;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.addtocart-box {
+  border: var(--main_grey2) var(--border_small) solid;
+  background: white;
+  transition: var(--transition-1);
+}
+
+.addtocart-box:hover {
+  border: var(--main_green-dark) var(--border_small) solid;
+}
+
+.flex-gap-align {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.payment-detail-1 {
+  color: var(--main_green-dark);
+  margin-bottom: 0.3rem;
+  margin-top: 1rem;
+}
+
+/********************* ABOUT *********************/
+
+.openpositions-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  grid-template-rows: auto;
+  margin-bottom: 0.3rem;
+  padding: 0.2rem;
+}
+
+.openpositions-grid:hover {
+  background: rgba(146, 229, 150, 0.3);
+}
+
+.ourstores-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(2, 1fr);
+  grid-template-rows: auto;
+  margin-bottom: 0.3rem;
+  padding: 0.2rem;
+}
+
+.ourstores-grid:hover {
+  background: rgba(146, 229, 150, 0.3);
+}
+
+details {
+  border: 3px solid var(--main_green-dark);
+  padding: 0.5em 0.5em 0;
+}
+
+summary {
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid var(--main_green);
+  margin-bottom: 0.5em;
+}
+
+/********************* CONTACT *********************/
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--gap_2);
+}
+
+.contact-staff-grid {
+  display: grid;
+  grid-template-rows: 320px 1fr 1fr;
+}
+
+.c-img-prop {
+  background-position: center;
+  background-size: cover;
+}
+
+.c_staff_info {
+  min-height: 5rem;
+  margin-top: 1rem;
+}
+
+.staff-1 {
+  background-image: url(/images/staff/staff-1-sm.jpg);
+}
+
+.staff-2 {
+  background-image: url(/images/staff/staff-2-sm.jpg);
+}
+
+.staff-3 {
+  background-image: url(/images/staff/staff-3-sm.jpg);
+}
+
+.staff-4 {
+  background-image: url(/images/staff/staff-4-sm.jpg);
+}
+
+/********************* PURCHASED FINISH *********************/
+
+.fa-circle-check {
+  font-size: 5rem;
+  color: var(--main_green-dark);
+}

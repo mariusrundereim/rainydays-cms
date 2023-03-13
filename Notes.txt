@@ -1,0 +1,11 @@
+
+
+// Home
+
+Slideshow: https://dev.to/shantanu_jana/create-an-automatic-image-slideshow-in-html-css-2d3g
+// List of Jackets
+// Jacket Specs
+// Checkout
+// Betaling
+// About
+// Contact

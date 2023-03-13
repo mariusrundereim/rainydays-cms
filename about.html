@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainy Days - About</title>
+    <meta name="description" content="About page" />
+    <link rel="icon" type="image/x-icon" href="/images/fav--icon.svg" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/fontstyles.css" />
+    <link rel="stylesheet" href="/css/mediaqueries.css" />
+    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akshar:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="top-header">
+      <!-- Primary Header -->
+      <section class="primary-header page-width">
+        <div class="flex pad-1">
+          <a href="index.html">
+            <img
+              class="page-logo"
+              src="/images/rainydays-logo.svg"
+              alt="rainy days logo"
+            />
+          </a>
+          <nav class="primary-nav">
+            <ul class="flex gap-1">
+              <li class="pagelinks" onclick="men()">Men</li>
+              <li class="pagelinks" onclick="women()">Women</li>
+              <li class="pagelinks">
+                <a href="about.html" class="pagelinks">About</a>
+              </li>
+              <li class="pagelinks">
+                <a href="contact.html" class="pagelinks">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="addtocart.html" class="header-shopping-bag"
+            ><i class="fa-solid fa-bag-shopping"></i
+          ></a>
+        </div>
+      </section>
+      <!-- Primary Header Mobile -->
+      <section class="primary-header-mobile">
+        <div class="flex pad-1">
+          <article>
+            <a href="index.html">
+              <img
+                class="page-logo"
+                src="/images/rainydays-logo.svg"
+                alt="rainy days logo"
+              />
+            </a>
+          </article>
+          <article>
+            <i onclick="MobileBar()" class="fa-solid fa-bars"></i>
+          </article>
+        </div>
+      </section>
+      <!-- Header Mobile Pagelinks -->
+      <section class="header-mobile-pagelinks center">
+        <nav class="center gap-1 text-align-c">
+          <a href="listofjackets-men.html" class="pagelinks-xl">Men</a>
+          <a href="listofjackets-women.html" class="pagelinks-xl">Women</a>
+          <a href="about.html" class="pagelinks-xl">About</a>
+          <a href="contact.html" class="pagelinks-xl">Contact</a>
+        </nav>
+      </section>
+      <!-- Men Category -->
+      <section class="category-men">
+        <section class="category-men-grid">
+          <div class="cat-men-col">
+            <h3 class="small-heading">Select by category:</h3>
+            <article class="grid-two-col-clean gap-sm">
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Down Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Insulation Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white"
+                  >Shell and hiking Jackets</label
+                >
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Fleece Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Woolen Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Training Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Ski-Cross Jackets</label>
+              </div>
+            </article>
+          </div>
+          <div class="cat-men-col"></div>
+          <div class="cat-men-col">
+            <h3 class="small-heading">Select by Sport:</h3>
+            <article class="grid-two-col-clean">
+              <h3 class="heading-uppercase-l c-white">Outdoor</h3>
+              <h3 class="heading-uppercase-l c-white">Hiking</h3>
+              <h3 class="heading-uppercase-l c-white">Exploring</h3>
+              <h3 class="heading-uppercase-l c-white">Skiing</h3>
+              <h3 class="heading-uppercase-l c-white">Camping</h3>
+              <h3 class="heading-uppercase-l c-white">Canoeing</h3>
+            </article>
+          </div>
+          <a class="cat-men-col btn-result" href="/listofjackets-men.html"
+            >View result</a
+          >
+        </section>
+      </section>
+      <!-- Women Category -->
+      <section class="category-women center">
+        <section class="category-women-grid">
+          <div class="cat-men-col">
+            <h3 class="small-heading">Select by category:</h3>
+            <article class="grid-two-col-clean gap-sm">
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Down Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Insulation Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white"
+                  >Shell and hiking Jackets</label
+                >
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Fleece Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Woolen Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Training Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Ski-Cross Jackets</label>
+              </div>
+            </article>
+          </div>
+          <div class="cat-men-col"></div>
+          <div class="cat-men-col">
+            <h3 class="small-heading">Select by Sport:</h3>
+            <article class="grid-two-col-clean">
+              <h3 class="heading-uppercase-l c-white">Outdoor</h3>
+              <h3 class="heading-uppercase-l c-white">Hiking</h3>
+              <h3 class="heading-uppercase-l c-white">Exploring</h3>
+              <h3 class="heading-uppercase-l c-white">Skiing</h3>
+              <h3 class="heading-uppercase-l c-white">Camping</h3>
+              <h3 class="heading-uppercase-l c-white">Canoeing</h3>
+            </article>
+          </div>
+          <a class="cat-men-col btn-result" href="/listofjackets-women.html"
+            >View result</a
+          >
+        </section>
+      </section>
+    </header>
+
+    <main class="page-width flex-page-gap margin-2">
+      <section class="hero-img-2 hero-img-prop flex-center">
+        <img
+          class="hero--text"
+          src="/images/rainydays-slogan-text.svg"
+          alt="Pushing the Comfort Zone"
+        />
+      </section>
+      <section class="grid-two-col">
+        <article>
+          <h2 class="heading-uppercase-l main_green-dark-color">Our Story</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            vel voluptates itaque necessitatibus earum adipisci vitae temporibus
+            voluptatem, distinctio, blanditiis mollitia corrupti aspernatur
+            porro ex quam praesentium! Animi officia provident quibusdam
+            exercitationem.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+            nostrum mollitia. Reprehenderit, ad ea. Fuga, iusto! Temporibus
+            ducimus velit numquam aspernatur pariatur. Explicabo dolores illo
+            laborum!
+          </p>
+        </article>
+        <article>
+          <h2 class="heading-uppercase-l main_green-dark-color">Our Goals</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            dignissimos sit amet quis dolorum eveniet ipsum repudiandae,
+            necessitatibus ratione harum architecto quod laboriosam praesentium
+            a rerum itaque accusamus porro possimus quisquam, alias sapiente
+            quam. Doloribus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore modi
+            quisquam vero hic esse, maxime iure, necessitatibus officia suscipit
+            enim nobis delectus obcaecati, amet velit eos debitis excepturi.
+          </p>
+        </article>
+      </section>
+      <section>
+        <article class="flex-page-gap-sm">
+          <!--Vacant Positions-->
+          <details>
+            <summary>
+              <h3 class="main_green-dark-color heading-uppercase-m">
+                Vacant Positions
+              </h3>
+            </summary>
+            <!-- Vacant Position Items-->
+            <section>
+              <article class="openpositions-grid">
+                <p>Lead UX Designer</p>
+                <p>Full time</p>
+                <p>Oslo</p>
+                <p>Deadline: 14.December 2022</p>
+                <p>Search now!</p>
+              </article>
+              <article class="openpositions-grid">
+                <p>Backend Developer</p>
+                <p>Full time</p>
+                <p>Bergen</p>
+                <p>Deadline: 14.December 2022</p>
+                <p>Search now!</p>
+              </article>
+              <article class="openpositions-grid">
+                <p>Lead UX Designer</p>
+                <p>Full time</p>
+                <p>Oslo</p>
+                <p>Deadline: 14.December 2022</p>
+                <p>Search now!</p>
+              </article>
+              <article class="openpositions-grid">
+                <p>Brand Manager</p>
+                <p>Full time</p>
+                <p>Kristiansand</p>
+                <p>Deadline: 14.December 2022</p>
+                <p>Search now!</p>
+              </article>
+              <article class="openpositions-grid">
+                <p>Web Developer</p>
+                <p>Full time</p>
+                <p>Stavanger</p>
+                <p>Deadline: 14.December 2022</p>
+                <p>Search now!</p>
+              </article>
+              <article class="openpositions-grid">
+                <p>Front-end Developer</p>
+                <p>Full time</p>
+                <p>Kristiansand</p>
+                <p>Deadline: 14.December 2022</p>
+                <p>Search now!</p>
+              </article>
+            </section>
+          </details>
+          <!--Our Stores -->
+          <details>
+            <summary>
+              <h3 class="main_green-dark-color heading-uppercase-m">
+                Our Stores
+              </h3>
+            </summary>
+            <!-- Our Stores Items-->
+            <section>
+              <article class="ourstores-grid">
+                <p>Oslo</p>
+                <p>Torgallmenningen 3, 4343 Bergen</p>
+                <a href="https://www.google.com/maps/@58.1561398,8.0145797,14z"
+                  >Google Maps</a
+                >
+              </article>
+              <article class="ourstores-grid">
+                <p>Bergen</p>
+                <p>Torgallmenningen 3, 4343 Bergen</p>
+                <a href="https://www.google.com/maps/@58.1561398,8.0145797,14z"
+                  >Google Maps</a
+                >
+              </article>
+              <article class="ourstores-grid">
+                <p>Kristiansand</p>
+                <p>Torgallmenningen 3, 4343 Bergen</p>
+                <a href="https://www.google.com/maps/@58.1561398,8.0145797,14z"
+                  >Google Maps</a
+                >
+              </article>
+              <article class="ourstores-grid">
+                <p>Trondheim</p>
+                <p>Torgallmenningen 3, 4343 Bergen</p>
+                <a href="https://www.google.com/maps/@58.1561398,8.0145797,14z"
+                  >Google Maps</a
+                >
+              </article>
+            </section>
+          </details>
+        </article>
+      </section>
+    </main>
+
+    <footer class="grid-center">
+      <section class="page-width footer-responsive margin-2">
+        <section class="flex--footer">
+          <article>
+            <a href="index.html"
+              ><img
+                class="logo-footer"
+                src="/images/rainydays-logo-green.svg"
+                alt="logo green"
+            /></a>
+          </article>
+
+          <article>
+            <h3 class="heading-uppercase-l c-white">Sosiale medier</h3>
+            <article class="some-icons-main">
+              <a class="social-box grid-center" href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a class="social-box grid-center" href="#">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a class="social-box grid-center" href="#">
+                <i class="fa-brands fa-snapchat"></i>
+              </a>
+              <a class="social-box grid-center" href="#">
+                <i class="fa-brands fa-vimeo-v"></i>
+              </a>
+              <a class="social-box grid-center" href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </article>
+          </article>
+        </section>
+        <!-- Newsletter -->
+        <section class="newsletter flex-col-ver space-around">
+          <h3 class="heading-uppercase-l c-white text-align-c">Newsletter</h3>
+          <div class="news-wrap">
+            <form action="newsletter" class="news-form">
+              <div class="form-name">
+                <label for="name"
+                  ><p class="text-uppercase-sm c-white">Your name:</p></label
+                >
+                <input type="text" name="name" id="name-form-label" required />
+              </div>
+              <div class="email-form">
+                <label for="email"
+                  ><p class="text-uppercase-sm c-white">Your email:</p></label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  id="email-form-label"
+                  required
+                />
+              </div>
+              <div class="submit-form">
+                <input type="submit" class="btn-submit" value="Subscribe" />
+              </div>
+            </form>
+          </div>
+        </section>
+      </section>
+    </footer>
+  </body>
+</html>

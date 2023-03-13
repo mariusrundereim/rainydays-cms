@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainy Days - Add to Cart</title>
+    <meta
+      name="description"
+      content="Page of Add to Cart with Payment methods"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/fav--icon.svg" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/fontstyles.css" />
+    <link rel="stylesheet" href="/css/mediaqueries.css" />
+    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akshar:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="top-header">
+      <!-- Primary Header -->
+      <section class="primary-header page-width">
+        <div class="flex pad-1">
+          <a href="index.html">
+            <img
+              class="page-logo"
+              src="/images/rainydays-logo.svg"
+              alt="rainy days logo"
+            />
+          </a>
+          <nav class="primary-nav">
+            <ul class="flex gap-1">
+              <li class="pagelinks" onclick="men()">Men</li>
+              <li class="pagelinks" onclick="women()">Women</li>
+              <li class="pagelinks">
+                <a href="about.html" class="pagelinks">About</a>
+              </li>
+              <li class="pagelinks">
+                <a href="contact.html" class="pagelinks">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="addtocart.html" class="header-shopping-bag"
+            ><i class="fa-solid fa-bag-shopping"></i
+          ></a>
+        </div>
+      </section>
+      <!-- Primary Header Mobile -->
+      <section class="primary-header-mobile">
+        <div class="flex pad-1">
+          <article>
+            <a href="index.html">
+              <img
+                class="page-logo"
+                src="/images/rainydays-logo.svg"
+                alt="rainy days logo"
+              />
+            </a>
+          </article>
+          <article>
+            <i onclick="MobileBar()" class="fa-solid fa-bars"></i>
+          </article>
+        </div>
+      </section>
+      <!-- Header Mobile Pagelinks -->
+      <section class="header-mobile-pagelinks center">
+        <nav class="center gap-1 text-align-c">
+          <a href="listofjackets-men.html" class="pagelinks-xl">Men</a>
+          <a href="listofjackets-women.html" class="pagelinks-xl">Women</a>
+          <a href="about.html" class="pagelinks-xl">About</a>
+          <a href="contact.html" class="pagelinks-xl">Contact</a>
+        </nav>
+      </section>
+      <!-- Men Category -->
+      <section class="category-men">
+        <section class="category-men-grid">
+          <div class="cat-men-col">
+            <h3 class="small-heading">Select by category:</h3>
+            <article class="grid-two-col-clean gap-sm">
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Down Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Insulation Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white"
+                  >Shell and hiking Jackets</label
+                >
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Fleece Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Woolen Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Training Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Ski-Cross Jackets</label>
+              </div>
+            </article>
+          </div>
+          <div class="cat-men-col"></div>
+          <div class="cat-men-col">
+            <h3 class="small-heading">Select by Sport:</h3>
+            <article class="grid-two-col-clean">
+              <h3 class="heading-uppercase-l c-white">Outdoor</h3>
+              <h3 class="heading-uppercase-l c-white">Hiking</h3>
+              <h3 class="heading-uppercase-l c-white">Exploring</h3>
+              <h3 class="heading-uppercase-l c-white">Skiing</h3>
+              <h3 class="heading-uppercase-l c-white">Camping</h3>
+              <h3 class="heading-uppercase-l c-white">Canoeing</h3>
+            </article>
+          </div>
+          <a class="cat-men-col btn-result" href="/listofjackets-men.html"
+            >View result</a
+          >
+        </section>
+      </section>
+      <!-- Women Category -->
+      <section class="category-women center">
+        <section class="category-women-grid">
+          <div class="cat-men-col">
+            <h3 class="small-heading">Select by category:</h3>
+            <article class="grid-two-col-clean gap-sm">
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Down Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Insulation Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white"
+                  >Shell and hiking Jackets</label
+                >
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Fleece Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Woolen Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Training Jackets</label>
+              </div>
+              <div class="jacket-list">
+                <input type="checkbox" />
+                <label for="jacket" class="c-white">Ski-Cross Jackets</label>
+              </div>
+            </article>
+          </div>
+          <div class="cat-men-col"></div>
+          <div class="cat-men-col">
+            <h3 class="small-heading">Select by Sport:</h3>
+            <article class="grid-two-col-clean">
+              <h3 class="heading-uppercase-l c-white">Outdoor</h3>
+              <h3 class="heading-uppercase-l c-white">Hiking</h3>
+              <h3 class="heading-uppercase-l c-white">Exploring</h3>
+              <h3 class="heading-uppercase-l c-white">Skiing</h3>
+              <h3 class="heading-uppercase-l c-white">Camping</h3>
+              <h3 class="heading-uppercase-l c-white">Canoeing</h3>
+            </article>
+          </div>
+          <a class="cat-men-col btn-result" href="/listofjackets-women.html"
+            >View result</a
+          >
+        </section>
+      </section>
+    </header>
+
+    <main class="page-width margin-3 flex-col-ver gap-2">
+      <!-- Process Bar-->
+      <section>
+        <section class="grid-two-col-clean margin-2">
+          <article>
+            <h3 class="text-align-c">Shopping Cart</h3>
+            <div class="progress-bar-cart"></div>
+          </article>
+          <article>
+            <h3 class="text-align-c">Payment</h3>
+            <div class="progress-bar-cart-uncheck"></div>
+          </article>
+        </section>
+        <section class="flex-col-hor gap-2">
+          <a href="index.html" class="btn-3 grid-center">Continue Shopping</a>
+          <a href="" class="btn-3 grid-center">Order History</a>
+        </section>
+      </section>
+      <!-- Grid Skew -->
+      <section class="grid-skew gap-2">
+        <!-- Cart Items -->
+        <section class="flex-col-ver gap-1">
+          <!-- Item 1 -->
+          <article
+            class="flex-col-hor flex-align-space addtocart-box pad-small"
+          >
+            <div class="product--image">
+              <img
+                class="img-cart"
+                src="/images/products/RainyDays_Jacket-2-sm.png"
+                alt="product image"
+              />
+            </div>
+
+            <article class="f-grow-1 gap-1">
+              <article class="flex-gap-align">
+                <article>
+                  <h2 class="heading-uppercase-s main_green-dark-color">
+                    Bergen
+                  </h2>
+                  <p class="text-sm">Ski Cross Jacket</p>
+                </article>
+
+                <article>
+                  <h2 class="heading-uppercase-s main_green-dark-color">
+                    Price
+                  </h2>
+                  <p class="text-sm">1499,- NOK</p>
+                </article>
+                <article>
+                  <h2 class="heading-uppercase-s main_green-dark-color">
+                    Color
+                  </h2>
+                  <p class="text-sm">Black</p>
+                </article>
+                <article>
+                  <h2 class="heading-uppercase-s main_green-dark-color">
+                    Size
+                  </h2>
+                  <p class="text-sm">M</p>
+                </article>
+                <article>
+                  <h2 class="heading-uppercase-s main_green-dark-color">
+                    Quantity
+                  </h2>
+                  <p class="text-sm">1</p>
+                </article>
+              </article>
+            </article>
+
+            <article class="flex-col-ver gap-sm">
+              <button class="btn-small">Edit Order</button>
+              <button class="btn-small">Remove</button>
+            </article>
+          </article>
+          <!-- Item 2 -->
+          <article
+            class="flex-col-hor flex-align-space addtocart-box pad-small"
+          >
+            <div class="product--image">
+              <img
+                class="img-cart"
+                src="/images/products/RainyDays_Jacket-2-sm.png"
+                alt="product image"
+              />
+            </div>
+
+            <article class="f-grow-1 gap-1">
+              <article class="flex-gap-align">
+                <article>
+                  <h2 class="heading-uppercase-s main_green-dark-color">
+                    Bergen
+                  </h2>
+                  <p class="text-sm">Ski Cross Jacket</p>
+                </article>
+
+                <article>
+                  <h2 class="heading-uppercase-s main_green-dark-color">
+                    Price
+                  </h2>
+                  <p class="text-sm">1499,- NOK</p>
+                </article>
+                <article>
+                  <h2 class="heading-uppercase-s main_green-dark-color">
+                    Color
+                  </h2>
+                  <p class="text-sm">Black</p>
+                </article>
+                <article>
+                  <h2 class="heading-uppercase-s main_green-dark-color">
+                    Size
+                  </h2>
+                  <p class="text-sm">M</p>
+                </article>
+                <article>
+                  <h2 class="heading-uppercase-s main_green-dark-color">
+                    Quantity
+                  </h2>
+                  <p class="text-sm">1</p>
+                </article>
+              </article>
+            </article>
+
+            <article class="flex-col-ver gap-sm">
+              <button class="btn-small">Edit Order</button>
+              <button class="btn-small">Remove</button>
+            </article>
+          </article>
+          <!-- Item 3 -->
+          <article
+            class="flex-col-hor flex-align-space addtocart-box pad-small"
+          >
+            <div class="product--image">
+              <img
+                class="img-cart"
+                src="/images/products/RainyDays_Jacket-2-sm.png"
+                alt="product image"
+              />
+            </div>
+
+            <article class="f-grow-1 gap-1">
+              <article class="flex-gap-align">
+                <article>
+                  <h2 class="heading-uppercase-s main_green-dark-color">
+                    Bergen
+                  </h2>
+                  <p class="text-sm">Ski Cross Jacket</p>
+                </article>
+
+                <article>
+                  <h2 class="heading-uppercase-s main_green-dark-color">
+                    Price
+                  </h2>
+                  <p class="text-sm">1499,- NOK</p>
+                </article>
+                <article>
+                  <h2 class="heading-uppercase-s main_green-dark-color">
+                    Color
+                  </h2>
+                  <p class="text-sm">Black</p>
+                </article>
+                <article>
+                  <h2 class="heading-uppercase-s main_green-dark-color">
+                    Size
+                  </h2>
+                  <p class="text-sm">M</p>
+                </article>
+                <article>
+                  <h2 class="heading-uppercase-s main_green-dark-color">
+                    Quantity
+                  </h2>
+                  <p class="text-sm">1</p>
+                </article>
+              </article>
+            </article>
+
+            <article class="flex-col-ver gap-sm">
+              <button class="btn-small">Edit Order</button>
+              <button class="btn-small">Remove</button>
+            </article>
+          </article>
+        </section>
+
+        <!-- Shipping Details -->
+        <section class="cart-section-4">
+          <article>
+            <article class="payment-detail-1 flex flex-align-space">
+              <h3>Frakt</h3>
+              <h4>120 NOK</h4>
+            </article>
+            <hr class="hr-line-small" />
+            <article class="payment-detail-1 flex flex-align-space">
+              <h3>Total</h3>
+              <h4>1699 NOK</h4>
+            </article>
+            <hr class="hr-line-big" />
+          </article>
+          <section class="cart-section-5">
+            <article>
+              <h3 class="heading-uppercase-m main_green-dark-color">
+                Payment Methods
+              </h3>
+            </article>
+            <section class="flex-col-ver gap-2">
+              <article>
+                <a
+                  class="btn-3 flex space-between align-item pad-1"
+                  href="purchased-finish.html"
+                  ><p>Vipps</p>
+                  <img src="/images/icons/Vipps-logo.svg" alt="Vipps logo"
+                /></a>
+              </article>
+              <article>
+                <a
+                  class="btn-3 flex space-between align-item pad-1"
+                  href="purchased-finish.html"
+                >
+                  <p>Visa Card</p>
+                  <img src="/images/icons/visa-logo.svg" alt="Visa logo"
+                /></a>
+              </article>
+            </section>
+          </section>
+        </section>
+
+        <!-- Payment Methods -->
+      </section>
+    </main>
+
+    <footer class="grid-center">
+      <section class="page-width footer-responsive margin-2">
+        <section class="flex--footer">
+          <article>
+            <a href="index.html"
+              ><img
+                class="logo-footer"
+                src="/images/rainydays-logo-green.svg"
+                alt="logo green"
+            /></a>
+          </article>
+
+          <article>
+            <h3 class="heading-uppercase-l c-white">Sosiale medier</h3>
+            <article class="some-icons-main">
+              <a class="social-box grid-center" href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a class="social-box grid-center" href="#">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a class="social-box grid-center" href="#">
+                <i class="fa-brands fa-snapchat"></i>
+              </a>
+              <a class="social-box grid-center" href="#">
+                <i class="fa-brands fa-vimeo-v"></i>
+              </a>
+              <a class="social-box grid-center" href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </article>
+          </article>
+        </section>
+        <!-- Newsletter -->
+        <section class="newsletter flex-col-ver space-around">
+          <h3 class="heading-uppercase-l c-white text-align-c">Newsletter</h3>
+          <div class="news-wrap">
+            <form action="newsletter" class="news-form">
+              <div class="form-name">
+                <label for="name"
+                  ><p class="text-uppercase-sm c-white">Your name:</p></label
+                >
+                <input type="text" name="name" id="name-form-label" required />
+              </div>
+              <div class="email-form">
+                <label for="email"
+                  ><p class="text-uppercase-sm c-white">Your email:</p></label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  id="email-form-label"
+                  required
+                />
+              </div>
+              <div class="submit-form">
+                <input type="submit" class="btn-submit" value="Subscribe" />
+              </div>
+            </form>
+          </div>
+        </section>
+      </section>
+    </footer>
+  </body>
+</html>
