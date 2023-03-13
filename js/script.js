@@ -1,4 +1,4 @@
-const url = `https://runder.no/rainydays-cms/wp-json/wc/store/products/`;
+const url = "https://runder.no/rainydays-cms/wp-json/wc/store/products/";
 
 async function getProducts() {
   const response = await fetch(url);
@@ -12,6 +12,7 @@ async function getProducts() {
   });
 }
 getProducts();
+
 
 /* Old functions */
 
