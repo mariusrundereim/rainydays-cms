@@ -19,9 +19,6 @@ async function getProduct() {
 
   function singleJacket(data){
     return (document.querySelector(".single-jacket-item").innerHTML = `
-    <h2>${data.name}</h2>
-
-
     <section class="grid-center">
         <img
           class="singlejacket-image img-prop"
@@ -34,9 +31,7 @@ async function getProduct() {
         <h2 class="heading-uppercase-l main_green-dark-color">${data.name}</h2>
         <h3>${data.prices.price} ${data.prices.currency_code}</h3>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias,
-          magni quidem ex reprehenderit est porro sit cupiditate, iure animi
-          sunt quibusdam doloribus recusandae qui. Animi sunt provident quam.
+          ${data.description}
         </p>
         <ul>
           <li>Suitable for a range of different weather types</li>
