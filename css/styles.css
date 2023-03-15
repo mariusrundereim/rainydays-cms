@@ -178,6 +178,10 @@ body {
 
 /********************* LIST OF JACKETS *********************/
 
+.prod-item {
+  border: 2px solid hotpink;
+}
+
 .aside-icons {
   color: var(--main_green-dark);
   font-size: 1.4rem;
@@ -193,6 +197,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
   gap: var(--gap_2);
+  border: 1px solid red;
 }
 
 .sticky-label {

@@ -1,4 +1,4 @@
-/*
+
 
 function men() {
   document.querySelector(".category-men").classList.toggle("display-block");
@@ -14,4 +14,4 @@ function MobileBar() {
     .classList.toggle("display-block");
 }
 
-*/
+

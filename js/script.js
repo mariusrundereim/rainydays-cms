@@ -9,17 +9,18 @@ async function getProducts() {
 
   data.forEach((jacket) => {
 
-    productCard.innerHTML = `
-    <a href="">
+    productCard.innerHTML += `
+    <a  href="single-jacket.html?id=${jacket.id}">
+    <div class="prod-item">
     <h2>${jacket.name}</h2>
     <img src="${jacket.images[0].src}">
+    <div>
+    <p>${jacket.prices.price} ${jacket.prices.currency_code}</p>
+    </div>
+    </div>
     </a>
-    
     `
 
-    console.log(jacket.name);
-    console.log(jacket.id);
-    console.log(jacket.images[0].src);
   });
 }
 getProducts();
