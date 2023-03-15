@@ -8,23 +8,20 @@ async function getProducts() {
   console.log(data);
 
   data.forEach((jacket) => {
-
     productCard.innerHTML += `
-    <a  href="single-jacket.html?id=${jacket.id}">
+    <a class="prod-card" href="single-jacket.html?id=${jacket.id}">
     <div class="prod-item">
-    <h2>${jacket.name}</h2>
-    <img src="${jacket.images[0].src}">
+    <h2 class="heading-uppercase-l main_green-dark-color">${jacket.name}</h2>
+    <img class="img" src="${jacket.images[0].src}">
     <div>
-    <p>${jacket.prices.price} ${jacket.prices.currency_code}</p>
+    <p class="text-price main_green-dark-color">${jacket.prices.price} ${jacket.prices.currency_code}</p>
     </div>
     </div>
     </a>
-    `
-
+    `;
   });
 }
 getProducts();
-
 
 /* Old functions */
 
