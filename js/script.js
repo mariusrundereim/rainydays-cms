@@ -7,13 +7,12 @@ async function getProducts() {
   const data = await response.json();
   console.log(data);
 
-
   data.forEach((jacket) => {
     productCard.innerHTML += `
     <a class="prod-card" href="single-jacket.html?id=${jacket.id}">
     <div class="prod-item">
     <h2 class="heading-uppercase-l main_green-dark-color">${jacket.name}</h2>
-    <h4 class="heading-uppercase-s">${jacket.categories[0].name}</h4>
+    <p>${jacket.categories[0].name}</p>
     <img class="img" src="${jacket.images[0].src}">
     <div>
     <p class="text-price main_green-dark-color">${jacket.prices.price} ${jacket.prices.currency_code}</p>
@@ -25,25 +24,23 @@ async function getProducts() {
 }
 getProducts();
 
-
 const selectCategory = document.querySelector(".select-category");
 const selectSport = document.querySelector(".select-sport");
 const selectSize = document.querySelector(".select-size");
 const selectPrize = document.querySelector(".select-prize");
 
 selectCategory.addEventListener("change", () => {
-  console.log(selectCategory.value)
-})
+  console.log(selectCategory.value);
+});
 
 selectSport.addEventListener("change", () => {
-  console.log(selectSport.value)
-})
+  console.log(selectSport.value);
+});
 
 selectSize.addEventListener("change", () => {
-  console.log(selectSize.value)
-})
+  console.log(selectSize.value);
+});
 
 selectPrize.addEventListener("change", () => {
-  console.log(selectPrize.value)
-})
-
+  console.log(selectPrize.value);
+});
