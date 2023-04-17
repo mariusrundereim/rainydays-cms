@@ -204,6 +204,7 @@
     </header>
 
     <main class="page-width margin-2">
+      <!-- Mens Jacket -->
       <section class="flex-col-hor spacebetween">
         <header class="flex-col-hor align-item gap-2">
           <h2 class="heading-uppercase-xl main_green-dark-color">
@@ -211,14 +212,11 @@
           </h2>
           <h4 class="heading-uppercase-m main_green-dark-color">48 Jackets</h4>
         </header>
-        <aside class="flex-col-hor align-item gap-2">
-          <i class="fa-solid fa-filter aside-icons"></i>
-          <i class="fa-sharp fa-solid fa-table-cells-large aside-icons"></i>
-        </aside>
       </section>
-      <article>
+      <!-- Select Field-->
+      <div class="flex-col-hor gap-1 margin-1">
         <form>
-          <select name="category-jacket" id="category-jacket">
+          <select name="category-jacket" class="select-field" id="category-jacket">
             <option value="">Select a category</option>
             <option value="fleece">Fleece jacket</option>
             <option value="skicross">Ski-Cross jacket</option>
@@ -227,7 +225,7 @@
           </select>
         </form>
         <form>
-          <select name="outdoor-jacket" id="outdoor-jacket">
+          <select name="outdoor-jacket" class="select-field" id="outdoor-jacket">
             <option value="">Select Sport</option>
             <option value="outdoor">Outdoor</option>
             <option value="camping">Camping</option>
@@ -236,7 +234,7 @@
           </select>
         </form>
         <form>
-          <select name="size-jacket">
+          <select name="size-jacket" class="select-field">
             <option value="">Size</option>
             <option value="">Small</option>
             <option value="">Medium</option>
@@ -244,7 +242,20 @@
             <option value="">X-Large</option>
           </select>
         </form>
-        <article class="listofjackets-page-grid prod"></article>
+        <form>
+          <select name="prize-jacket" class="select-field">
+            <option value="">Prize</option>
+            <option value="">500</option>
+            <option value="">1000</option>
+            <option value="">1500</option>
+            <option value="">2000</option>
+          </select>
+        </form>
+        
+      </div>
+      <!-- List of Jackets -->
+      <article>
+        <article class="listofjackets-page-grid gap-2 prod"></article>
       </article>
     </main>
 

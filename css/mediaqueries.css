@@ -51,11 +51,7 @@
     background-image: url(/images/products/product-women-ipad.png);
   }
 
-  /* List of Jackets */
-
-  .listofjackets-page-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+ 
 
   /********************* SINGLE PRODUCT *********************/
 
@@ -86,11 +82,7 @@
   }
 }
 
-@media (max-width: 840px) {
-  .listofjackets-page-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
+
 
 /* SMALLER DEVICES */
 
@@ -135,11 +127,6 @@
     gap: var(--padding-sm);
   }
 
-  /* List of Jackets */
-
-  .listofjackets-page-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
 
   /* Add to Cart */
 
