@@ -26,6 +26,10 @@
 }
 
 .primary-nav {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
   cursor: pointer;
 }
 
@@ -34,7 +38,7 @@
 .primary-header {
   background: var(--main_green-dark);
   width: 100%;
-  min-height: 84px;
+  min-height: 74px;
 }
 
 .page-logo {
@@ -56,12 +60,7 @@
 
 /* Primary Header - Mobile */
 
-.primary-header-mobile {
-  display: none;
-  background: var(--main_green-dark);
-  width: 100%;
-  min-height: 84px;
-}
+
 
 .fa-bars {
   color: white;

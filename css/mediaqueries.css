@@ -4,9 +4,7 @@
     --page-width: calc(100% - 2rem);
   }
 
-  .primary-header {
-    display: none;
-  }
+
 
   .primary-header-mobile {
     display: block;
