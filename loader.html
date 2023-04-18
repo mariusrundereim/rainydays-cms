@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainy Days</title>
+    <meta name="description" content="Frontpage of RainyDays" />
+    <link rel="icon" type="image/x-icon" href="/images/fav--icon.svg" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/fontstyles.css" />
+    <link rel="stylesheet" href="/css/mediaqueries.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akshar:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3449387, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <script defer src="./js/header.js"></script>
+  </head>
+  <body>
+    <header class="top-header">
+      <section class="primary-header page-width">
+        <div class="flex pad-1">
+          <a href="index.html">
+            <img
+              class="page-logo"
+              src="/images/rainydays-logo.svg"
+              alt="rainy days logo"
+            />
+          </a>
+          <nav class="primary-nav">
+            <ul class="flex gap-1">
+              <li class="pagelinks">
+                <a class="pagelinks" href="listofjackets-men.html">Men</a>
+              </li>
+              <li class="pagelinks">
+                <a class="pagelinks" href="listofjackets-women.html">Women</a>
+              </li>
+              <li class="pagelinks">
+                <a class="pagelinks" href="#">Sports</a>
+              </li>
+            </ul>
+            <ul class="flex gap-1">
+              <li class="pagelinks">
+                <a class="pagelinks" href="#">Favourites</a>
+              </li>
+              <li class="pagelinks">
+                <a class="pagelinks" href="addtocart.html">Shopping Cart</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </header>
+
+    <main class="page-width flex-col-ver gap-3 margin-2">
+      <div class="loader-container">
+        <div class="loader-outer">
+          <div class="loader-inner"></div>
+        </div>
+        <p>Loading jackets</p>
+      </div>
+    </main>
+
+    <footer class="grid-center">
+      <section class="page-width footer-responsive margin-2">
+        <section class="flex--footer">
+          <article>
+            <a href="index.html"
+              ><img
+                class="logo-footer"
+                src="/images/rainydays-logo-green.svg"
+                alt="logo green"
+            /></a>
+          </article>
+
+          <section>
+            <h3 class="heading-uppercase-l c-white">Contact us</h3>
+            <article>
+              <ul class="page-list">
+                <li>
+                  <a class="pagelinks" href="about.html">About</a>
+                </li>
+                <li><a class="pagelinks" href="contact.html">Contact</a></li>
+              </ul>
+            </article>
+          </section>
+
+          <article>
+            <h3 class="heading-uppercase-l c-white">Links</h3>
+            <article class="some-icons-main">
+              <a class="social-box grid-center" href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a class="social-box grid-center" href="#">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a class="social-box grid-center" href="#">
+                <i class="fa-brands fa-snapchat"></i>
+              </a>
+              <a class="social-box grid-center" href="#">
+                <i class="fa-brands fa-vimeo-v"></i>
+              </a>
+              <a class="social-box grid-center" href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </article>
+          </article>
+        </section>
+        <!-- Newsletter -->
+        <section class="newsletter flex-col-ver space-around">
+          <h3 class="heading-uppercase-l c-white text-align-c">Newsletter</h3>
+          <div class="news-wrap">
+            <form action="get" class="news-form">
+              <div class="form-name">
+                <label for="name"
+                  ><p class="text-uppercase-sm c-white">Your name:</p></label
+                >
+                <input type="text" name="name" id="name-form-label" required />
+              </div>
+              <div class="email-form">
+                <label for="email"
+                  ><p class="text-uppercase-sm c-white">Your email:</p></label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  id="email-form-label"
+                  required
+                />
+              </div>
+              <div class="submit-form">
+                <button type="submit" class="btn-submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </section>
+    </footer>
+  </body>
+</html>

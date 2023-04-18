@@ -1,6 +1,7 @@
 @import url(/css/library/header.css);
 @import url(/css/library/footer.css);
 @import url(/css/library/framework.css);
+@import url(/css/library/loading.css);
 
 * {
   margin: 0;
@@ -18,7 +19,7 @@ html {
   --main_pink: #ff9094;
   --main_pink-dark: #6a435a;
 
-  --main_grey1: #BBD2D7;
+  --main_grey1: #bbd2d7;
   --main_grey2: #d2dbe3;
   --c-white: #ffffff;
   --c-dark: #131414;
@@ -65,7 +66,11 @@ html {
 
 body {
   font-family: "Heebo", sans-serif;
-  background: #E5EDEF;
+  background: #e5edef;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .page-width {
@@ -195,7 +200,7 @@ body {
 .prod-card {
   text-decoration: none;
   height: 100%;
-  
+
   display: flex;
 }
 
@@ -227,7 +232,7 @@ body {
 
 .listofjackets-page-grid {
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   width: 100%;
 }
 
