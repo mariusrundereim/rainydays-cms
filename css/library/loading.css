@@ -5,8 +5,12 @@
   align-items: center;
 }
 
-.loader-display {
-  display: none;
+.hidden {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
 }
 
 .loader-outer {
@@ -21,7 +25,7 @@
   width: 50%;
   height: 80px;
   background: var(--main_green);
-  animation: loader 1s ease infinite;
+  /* animation: loader 1s ease infinite; */
 }
 
 @keyframes loader {

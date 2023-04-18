@@ -2,11 +2,15 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const prodId = params.get("id");
 
+const loader = document.querySelector(".loader-container");
+
 const url = `https://runder.no/rainydays-cms/wp-json/wc/store/products/${prodId}`;
 
 async function getProduct() {
+  loader.classList.add("show");
   const response = await fetch(url);
   const data = await response.json();
+
   console.log(data);
 
   singleJacket(data);
@@ -14,6 +18,7 @@ async function getProduct() {
 getProduct();
 
 function singleJacket(data) {
+  loader.classList.remove("show");
   return (document.querySelector(".single-jacket-item").innerHTML = `
   <section class="grid-center">
   <img
