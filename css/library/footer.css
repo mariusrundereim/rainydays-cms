@@ -1,5 +1,10 @@
 /*** Footer ***/
 
+.page-list {
+  list-style: none;
+  padding-left: 0%;
+}
+
 footer {
   background: var(--main_green-dark);
   min-height: 25rem;

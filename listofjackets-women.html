@@ -41,13 +41,23 @@
           </a>
           <nav class="primary-nav">
             <ul class="flex gap-1">
-              <li class="pagelinks"><a class="pagelinks" href="listofjackets-men.html">Men</a></li>
-              <li class="pagelinks"><a class="pagelinks" href="listofjackets-women.html">Women</a></li>
-              <li class="pagelinks"><a class="pagelinks" href="#">Sports</a></li>
+              <li class="pagelinks">
+                <a class="pagelinks" href="listofjackets-men.html">Men</a>
+              </li>
+              <li class="pagelinks">
+                <a class="pagelinks" href="listofjackets-women.html">Women</a>
+              </li>
+              <li class="pagelinks">
+                <a class="pagelinks" href="#">Sports</a>
+              </li>
             </ul>
             <ul class="flex gap-1">
-              <li class="pagelinks"><a class="pagelinks" href="#">Favourites</a></li>
-              <li class="pagelinks"><a class="pagelinks" href="addtocart.html">Shopping Cart</a></li>
+              <li class="pagelinks">
+                <a class="pagelinks" href="#">Favourites</a>
+              </li>
+              <li class="pagelinks">
+                <a class="pagelinks" href="addtocart.html">Shopping Cart</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -338,8 +348,20 @@
             /></a>
           </article>
 
+          <section>
+            <h3 class="heading-uppercase-l c-white">Contact us</h3>
+            <article>
+              <ul class="page-list">
+                <li>
+                  <a class="pagelinks" href="about.html">About</a>
+                </li>
+                <li><a class="pagelinks" href="contact.html">Contact</a></li>
+              </ul>
+            </article>
+          </section>
+
           <article>
-            <h3 class="heading-uppercase-l c-white">Sosiale medier</h3>
+            <h3 class="heading-uppercase-l c-white">Links</h3>
             <article class="some-icons-main">
               <a class="social-box grid-center" href="#">
                 <i class="fa-brands fa-facebook-f"></i>
@@ -363,7 +385,7 @@
         <section class="newsletter flex-col-ver space-around">
           <h3 class="heading-uppercase-l c-white text-align-c">Newsletter</h3>
           <div class="news-wrap">
-            <form action="newsletter" class="news-form">
+            <form action="get" class="news-form">
               <div class="form-name">
                 <label for="name"
                   ><p class="text-uppercase-sm c-white">Your name:</p></label
@@ -382,7 +404,7 @@
                 />
               </div>
               <div class="submit-form">
-                <input type="submit" class="btn-submit" value="Subscribe" />
+                <button type="submit" class="btn-submit">Subscribe</button>
               </div>
             </form>
           </div>
