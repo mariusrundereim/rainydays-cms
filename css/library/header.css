@@ -28,8 +28,7 @@
 .primary-nav {
   display: flex;
   justify-content: space-between;
-
-  width: 100%;
+  gap: 4rem;
   cursor: pointer;
 }
 
@@ -59,8 +58,6 @@
 }
 
 /* Primary Header - Mobile */
-
-
 
 .fa-bars {
   color: white;

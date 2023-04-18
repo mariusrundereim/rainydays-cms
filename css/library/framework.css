@@ -121,6 +121,11 @@
   justify-content: space-around;
 }
 
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .flex-page-gap {
   display: flex;
   flex-direction: column;
