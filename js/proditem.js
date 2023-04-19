@@ -7,7 +7,6 @@ const loader = document.querySelector(".loader-container");
 const url = `https://runder.no/rainydays-cms/wp-json/wc/store/products/${prodId}`;
 
 async function getProduct() {
-  loader.classList.add("show");
   const response = await fetch(url);
   const data = await response.json();
 
@@ -18,7 +17,7 @@ async function getProduct() {
 getProduct();
 
 function singleJacket(data) {
-  loader.classList.remove("show");
+  loader.classList.add("hidden");
   return (document.querySelector(".single-jacket-item").innerHTML = `
   <section class="grid-center">
   <img
