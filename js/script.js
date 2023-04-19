@@ -7,6 +7,8 @@ async function getProducts() {
   const data = await response.json();
   console.log(data);
 
+  numberOfJackets(data);
+
   data.forEach((jacket) => {
     productCard.innerHTML += `
     <a class="prod-card" href="single-jacket.html?id=${jacket.id}">
@@ -23,6 +25,13 @@ async function getProducts() {
   });
 }
 getProducts();
+
+function numberOfJackets(data) {
+  console.log(data.length);
+
+  const listjacket = document.querySelector(".list-all-jackets");
+  listjacket.innerHTML += `${data.length} `;
+}
 
 const selectCategory = document.querySelector(".select-category");
 const selectSport = document.querySelector(".select-sport");
