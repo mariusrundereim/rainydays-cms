@@ -208,26 +208,23 @@ body {
   border: 2px solid var(--main_grey2);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
   padding: 1rem;
+  transition: 300ms ease;
 }
 
-.img {
+.prod-item:hover {
+  border: 2px solid var(--main_grey1);
+  background: white;
+}
+
+.product-image {
   width: 100%;
+  padding: 0rem 1rem;
   min-width: 80px;
   max-width: 300px;
-}
-
-.aside-icons {
-  color: var(--main_green-dark);
-  font-size: 1.4rem;
-  transition: var(--transition-1);
-}
-
-.aside-icons:hover {
-  color: var(--main_green);
 }
 
 .listofjackets-page-grid {

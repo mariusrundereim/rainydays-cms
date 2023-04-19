@@ -12,8 +12,8 @@ async function getProducts() {
     <a class="prod-card" href="single-jacket.html?id=${jacket.id}">
     <div class="prod-item">
     <h2 class="heading-uppercase-l main_green-dark-color">${jacket.name}</h2>
-    <p>${jacket.categories[0].name}</p>
-    <img class="img" src="${jacket.images[0].src}">
+    <p class="text-uppercase-sm main_green-dark-color">${jacket.categories[0].name}</p>
+    <img class="product-image" src="${jacket.images[0].src}">
     <div>
     <p class="text-price main_green-dark-color">${jacket.prices.price} ${jacket.prices.currency_code}</p>
     </div>
