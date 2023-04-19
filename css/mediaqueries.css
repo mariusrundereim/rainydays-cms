@@ -4,8 +4,6 @@
     --page-width: calc(100% - 2rem);
   }
 
-
-
   .primary-header-mobile {
     display: block;
   }
@@ -49,13 +47,7 @@
     background-image: url(/images/products/product-women-ipad.png);
   }
 
- 
-
   /********************* SINGLE PRODUCT *********************/
-
-  /* Add to Cart */
-
-  /* About */
 
   .openpositions-grid {
     grid-template-columns: auto;
@@ -80,7 +72,17 @@
   }
 }
 
+/* MEDIUM DEVICES */
 
+@media screen and (max-width: 570px) {
+  .top-header {
+    flex-direction: column;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+}
 
 /* SMALLER DEVICES */
 
@@ -124,7 +126,6 @@
     grid-template-columns: repeat(4, 1fr);
     gap: var(--padding-sm);
   }
-
 
   /* Add to Cart */
 

@@ -185,16 +185,6 @@ body {
 .brand-logo-scale {
   scale: var(--scaling);
 }
-/********************* SPORTS *********************/
-
-.sport-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  border: 1px solid var(--main_grey1);
-  padding: var(--padding-m);
-  min-height: 15rem;
-}
 
 /********************* LIST OF JACKETS *********************/
 
@@ -328,6 +318,11 @@ body {
 .singlejacket-image {
   width: clamp(18rem, 50%, 40rem);
   min-height: 5rem;
+}
+
+.product-img-item {
+  border: 2px solid var(--main_grey1);
+  padding: 1rem;
 }
 
 .img-prop {

@@ -19,14 +19,13 @@ getProduct();
 function singleJacket(data) {
   loader.classList.add("hidden");
   return (document.querySelector(".single-jacket-item").innerHTML = `
-  <section class="grid-center">
+  <section class="grid-center product-img-item">
   <img
     class="singlejacket-image img-prop"
     src="${data.images[0].src}"
     alt="${data.name}"
   />
 </section>
-<!--Col 2-->
 <section class="flex-col-ver gap-2">
   <h2 class="heading-uppercase-l main_green-dark-color">${data.name}</h2>
   <h3>${data.prices.price} ${data.prices.currency_code}</h3>
