@@ -9,6 +9,8 @@ async function getProducts() {
 
   numberOfJackets(data);
 
+  renderAllJackets(data);
+
   data.forEach((jacket) => {
     productCard.innerHTML += `
     <a class="prod-card" href="single-jacket.html?id=${jacket.id}">
@@ -26,30 +28,11 @@ async function getProducts() {
 }
 getProducts();
 
-function numberOfJackets(data) {
-  console.log(data.length);
+function renderAllJackets(data) {
+  console.log(data);
+}
 
+function numberOfJackets(data) {
   const listjacket = document.querySelector(".list-all-jackets");
   listjacket.innerHTML += `${data.length} `;
 }
-
-const selectCategory = document.querySelector(".select-category");
-const selectSport = document.querySelector(".select-sport");
-const selectSize = document.querySelector(".select-size");
-const selectPrize = document.querySelector(".select-prize");
-
-selectCategory.addEventListener("change", () => {
-  console.log(selectCategory.value);
-});
-
-selectSport.addEventListener("change", () => {
-  console.log(selectSport.value);
-});
-
-selectSize.addEventListener("change", () => {
-  console.log(selectSize.value);
-});
-
-selectPrize.addEventListener("change", () => {
-  console.log(selectPrize.value);
-});

@@ -40,6 +40,19 @@
   border: var(--border_normal) var(--main_grey1) solid;
 }
 
+.btn-4 {
+  color: var(--main_green-dark);
+  text-transform: uppercase;
+  border: 2px solid var(--main_grey1);
+  padding: 0.5rem 1rem;
+}
+
+.btn-prop {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+}
+
 .btn-addtocart {
   background: var(--main_green);
   width: max-content;
